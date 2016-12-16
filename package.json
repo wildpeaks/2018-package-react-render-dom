@@ -1,0 +1,37 @@
+{
+  "name": "@wildpeaks/react-render-dom",
+  "version": "2.1.0",
+  "description": "Renders a React component in the DOM",
+  "main": "src/render.js",
+  "files": [
+    "src/render.js",
+    "test/render.tests.js"
+  ],
+  "scripts": {
+    "test": "mocha -r jsdom-global/register test/*.js"
+  },
+  "repository": "https://github.com/wildpeaks/package-react-render-dom",
+  "keywords": [
+    "wildpeaks",
+    "react",
+    "render"
+  ],
+  "author": "Cecile Muller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildpeaks/package-react-render-dom/issues"
+  },
+  "homepage": "https://github.com/wildpeaks/package-react-render-dom#readme",
+  "peerDependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "jsdom": "^9.8.3",
+    "jsdom-global": "^2.1.0",
+    "mocha": "^3.2.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "@wildpeaks/snapshot-dom": "latest"
+  }
+}
