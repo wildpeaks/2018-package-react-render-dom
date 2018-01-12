@@ -1,18 +1,22 @@
 {
   "name": "@wildpeaks/react-render-dom",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Renders a React component in the DOM",
-  "main": "src/render.js",
+  "main": "src/render.ts",
+  "types": "src/render.ts",
   "files": [
-    "src/render.js",
-    "test/render.tests.js"
+    "src"
   ],
+  "eslintConfig": {
+    "extends": "@wildpeaks/typescript"
+  },
   "scripts": {
-    "test": "mocha -r jsdom-global/register test/*.js"
+    "test": "jasmine --helper=jasmine.typescript.js test/*.spec.ts"
   },
   "repository": "https://github.com/wildpeaks/package-react-render-dom",
   "keywords": [
     "wildpeaks",
+    "typescript",
     "react",
     "render"
   ],
@@ -23,15 +27,23 @@
   },
   "homepage": "https://github.com/wildpeaks/package-react-render-dom#readme",
   "peerDependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "*",
+    "react-dom": "*",
+    "typescript": "*"
   },
   "devDependencies": {
-    "jsdom": "^9.8.3",
-    "jsdom-global": "^2.1.0",
-    "mocha": "^3.2.0",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "@wildpeaks/snapshot-dom": "latest"
+    "@types/jasmine": "2.8.3",
+    "@types/node": "9.3.0",
+    "@types/react": "16.0.34",
+    "@types/react-dom": "16.0.3",
+    "@wildpeaks/eslint-config-typescript": "4.3.0",
+    "@wildpeaks/snapshot-dom": "1.2.1",
+    "eslint": "4.15.0",
+    "jasmine": "2.8.0",
+    "jsdom": "11.5.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
   }
 }

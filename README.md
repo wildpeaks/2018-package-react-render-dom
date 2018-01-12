@@ -8,9 +8,16 @@ Install:
 
 	npm install @wildpeaks/react-render-dom
 
-Usage:
+Example:
+````ts
+import {createElement as h} from 'react';
+import {render} from '@wildpeaks/react-render-dom';
 
-	const MyComponent = require('components/MyComponent');
-	const render = require('@wildpeaks/react-render-dom');
+interface MyProps {
+	href: string;
+}
+const MyComponent = (props: MyProps) => h('a', props);
 
-	render(document.body, MyComponent, props);
+const container = document.createElement('div');
+render<MyProps>(container, MyComponent, {href: 'stateless'});
+````
