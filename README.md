@@ -1,7 +1,5 @@
 # Render to DOM
 
-[![Build Status](https://travis-ci.org/wildpeaks/package-react-render-dom.svg?branch=master)](https://travis-ci.org/wildpeaks/package-react-render-dom)
-
 **Renders a React component** in the DOM, similar to `@wildpeaks/preact-render-dom`.
 
 Install:
